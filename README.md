@@ -16,11 +16,17 @@ This project provisions a fully automated static website hosting setup on AWS us
 **Project Structure
 **.
 ├── public              # Static website Code
+
 ├── provider.tf         # AWS provider and region configuration
+
 ├── s3.tf               # S3 bucket and object definitions
+
 ├── cloudfront.tf       # CloudFront distribution setup
+
 ├── variables.tf        # (Optional) input variable definitions
+
 ├── outputs.tf          # (Optional) output values
+
 └── README.md           # You're here
 
 **Prerequisites**
@@ -40,7 +46,9 @@ cd S3_cloudfront_project
 Make sure your AWS CLI is configured or export your credentials manually:
 
 aws configure
+
 OR
+
 export AWS_ACCESS_KEY_ID=your_key
 export AWS_SECRET_ACCESS_KEY=your_secret
 
