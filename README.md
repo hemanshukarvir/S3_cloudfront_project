@@ -1,4 +1,5 @@
 **Static Website Hosting with S3 + CloudFront using Terraform**
+
 This project provisions a fully automated static website hosting setup on AWS using S3 for storage and CloudFront for global content delivery, all managed with Terraform.
 
 **Features**
@@ -39,7 +40,7 @@ cd S3_cloudfront_project
 Make sure your AWS CLI is configured or export your credentials manually:
 
 aws configure
-# OR
+OR
 export AWS_ACCESS_KEY_ID=your_key
 export AWS_SECRET_ACCESS_KEY=your_secret
 
