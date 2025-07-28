@@ -13,8 +13,8 @@ This project provisions a fully automated static website hosting setup on AWS us
 
 🧱 Clean module/file structure for clarity and reuse
 
-**Project Structure
-**.
+**Project Structure**
+
 ├── public              # Static website Code
 
 ├── provider.tf         # AWS provider and region configuration
@@ -66,5 +66,4 @@ terraform apply
 🌐 Accessing the Website
 Once deployed, access the CloudFront URL where your static site is hosted:
 
-Outputs:
 cloudfront_url = https://xxxxxxxxxxxx.cloudfront.net/index.html
