@@ -9,6 +9,6 @@ terraform {
 
 provider "aws" {
     region ="eu-central-1"
-    shared_credentials_files = ["C:\\Users\\hkarvir\\.aws\\credentials"]
-    profile = "Administrator"
+    shared_credentials_files = ["Your File Path for Credentials file"]
+    profile = "Profile Name created in IAM"
 }
