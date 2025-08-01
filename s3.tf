@@ -1,8 +1,9 @@
+#Create S3 Bucket
 resource "aws_s3_bucket" "tf_s3_bucket" {
     bucket = "tf-s3-cf-demo-hemanshu"
 }
 
-
+#Create S3 bucket objects
 resource "aws_s3_object" "tf_s3_object" {
     bucket = aws_s3_bucket.tf_s3_bucket.bucket
     for_each = local.files_map
@@ -15,6 +16,7 @@ locals {
     files_map = {for filea in local.files_list : filea => filea }
 }
 
+#Enable Static Website
 resource "aws_s3_bucket_website_configuration" "tf_s3_website" {
   bucket = aws_s3_bucket.tf_s3_bucket.bucket
   index_document {
@@ -51,5 +53,3 @@ resource "aws_s3_bucket_policy" "tf_s3_bucket_policy" {
 data "aws_iam_user" "admin" {
   user_name = "Administrator"
 }
-
-#ABCDEF TESTING ADDITION
